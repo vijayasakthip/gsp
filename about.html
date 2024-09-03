@@ -11,7 +11,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+
 
   <meta name="description" content="" />
   <meta name="keywords" content="bootstrap, bootstrap4" />
@@ -21,13 +21,28 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<title>GSP About-Us</title>
+		<title>GSP About us</title>
+		<style>
+			.post-entry .post-thumbnail img {
+   				 transition: transform 0.3s ease; /* Smooth transition */
+			}
+
+			.post-entry .post-thumbnail:hover img {
+   				 transform: scale(1.05); /* Slight zoom-in effect */
+			}
+			#explore:hover {
+   				background-color: white; /* Background color change on hover */
+    			color: black; /* Text color change on hover */
+   				border-color: black; /* Border color change black*/
+				transition: all ease 1.0s;
+			}
+		</style>
 	</head>
 
 	<body>
 
 		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar" style="font-size: 17px;">
 
 			<div class="container">
 				<a class="navbar-brand" href="index.html">GSP<span></span></a>
@@ -61,8 +76,8 @@
 			<div class="col-lg-5">
 				<div class="intro-excerpt">
 					<h1>GSP Infinity Ventur</h1>
-					<p class="mb-4" style="text-align: justify">GSP Infinity Ventur is a pioneering global sourcing ally, specializing in diverse import and export goods. Committed to excellence and transparency, we connect businesses worldwide with high-quality products for effortless transactions. Our expert team ensures competitive pricing and timely delivery, fostering long-term partnerships in international trade.</p>
-					<p><a href="#" class="btn btn-white-outline">Explore</a></p>
+					<p class="mb-4" style="text-align: justify;color: white;font-size: 16px;">GSP Infinity Ventur is a pioneering global sourcing ally, specializing in diverse import and export goods. Committed to excellence and transparency, we connect businesses worldwide with high-quality products for effortless transactions. Our expert team ensures competitive pricing and timely delivery, fostering long-term partnerships in international trade.</p>
+					<p><a href="#" class="btn btn-white-outline" id="explore">Explore</a></p>
 				</div>
 			</div>
 			<div class="col-lg-7">
@@ -74,81 +89,73 @@
 <!-- End Hero Section -->
 
 		<!-- start who we are section -->
-		<div class="who-background">
-		<div class="why-choose-section">
-			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-lg-6">
-						<h2 class="section-title">Who we are</h2>
-						<p style="text-align:justify">At GSP Infinity Ventur, we believe that the foundation of any successful business lies in the strength of its partnerships. With years of experience in international trade, our team has cultivated a vast network of suppliers and buyers, enabling us to source and deliver products that meet the highest standards of quality. We are committed to upholding our core values in every aspect of our business:
-						</p>
-					</div>
-	
+<div class="who-background">
+    <div class="why-choose-section">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-lg-6">
+					<h1 class="section-title">Who we are</h1>
+					<p style="text-align:justify;color: black;font-size: 16px;">
+						At GSP Infinity Ventur, we believe that the foundation of any successful business lies in the strength of its partnerships. With years of experience in international trade, our team has cultivated a vast network of suppliers and buyers, enabling us to source and deliver products that meet the highest standards of quality. We are committed to upholding our core values in every aspect of our business:
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<img src="images/whoweare.png" alt="Who We Are Image" style="height: 450px;width:100%;">
 				</div>
 			</div>
 		</div>
-		
-	
-		<div class="blog-section">
-			<div class="container">
-				
-				<div class="row">
 
-					<div class="col-12 col-sm-6 col-md-4 mb-2">
-						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/fastandquality.jpg" alt="Image" class="img-fluid"style="height: 246px;width: 100%;"></a>
-							<div class="post-content-entry">
-								<h3 style="text-align: center;"><a href="#">Fast &amp;Quality</a></h3>
-								<div class="meta">
-									<p style="text-align:justify">We carefully select our products to ensure they meet the specific needs and expectations of our clients. From eco-friendly wooden cutlery to high-grade plywood, and from durable hardwoods like teak and merbau to energy-efficient LED lights, we offer products that are synonymous with excellence.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+    <div class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="images/fastandquality.jpg" alt="Image" class="img-fluid" style="height: 246px;width: 100%;">
+                        </a>
+                        <div class="post-content-entry">
+                            <h5 style="text-align: center;"><a href="#"><b>Fast &amp; Quality</b></a></h5>
+                            <div class="meta">
+                                <p style="text-align:justify;color: black;font-size: 16px;">We carefully select our products to ensure they meet the specific needs and expectations of our clients. From eco-friendly wooden cutlery to high-grade plywood, and from durable hardwoods like teak and merbau to energy-efficient LED lights, we offer products that are synonymous with excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<div class="col-12 col-sm-6 col-md-4 mb-2">
-						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/pricing.jpg" alt="Image" class="img-fluid"style="height: 246px;width: 100%;"></a>
-							<div class="post-content-entry">
-								<h3 style="text-align: center;"><a href="#">Competitive Pricing</a></h3>
-								<div class="meta">
-									<p style="text-align:justify">Our global network allows us to provide competitive pricing, giving our clients an edge in their respective markets. We strive to offer value without compromising on quality, ensuring that our customers can compete effectively on a global scale.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="images/pricing.jpg" alt="Image" class="img-fluid" style="height: 246px;width: 100%;">
+                        </a>
+                        <div class="post-content-entry">
+                            <h5 style="text-align: center;"><a href="#"><b>Competitive Pricing</b></a></h5>
+                            <div class="meta">
+                                <p style="text-align:justify;color: black;font-size: 16px;">Our global network allows us to provide competitive pricing, giving our clients an edge in their respective markets. We strive to offer value without compromising on quality, ensuring that our customers can compete effectively on a global scale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<div class="col-12 col-sm-6 col-md-4 mb-2">
-						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/timelydelivery.webp" alt="Image" class="img-fluid" style="height: 246px;width: 100%;"></a>
-							<div class="post-content-entry">
-								<h3 style="text-align: center;"><a href="#">Timely Delivery</a></h3>
-								<div class="meta">
-									<p style="text-align: justify">
-										We understand that time is of the essence in the world of international trade. Our efficient logistics and supply chain management ensure that your products are delivered on time, every time, no matter where you are located.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+                <div class="col-12 col-sm-6 col-md-4 mb-2">
+                    <div class="post-entry">
+                        <a href="#" class="post-thumbnail">
+                            <img src="images/timely.png" alt="Image" class="img-fluid" style="height: 246px;width: 100%;">
+                        </a>
+                        <div class="post-content-entry">
+                            <h5 style="text-align: center;"><a href="#"><b>Timely Delivery</b></a></h5>
+                            <div class="meta">
+                                <p style="text-align:justify;color: black;font-size: 16px;">We understand that time is of the essence in the world of international trade. Our efficient logistics and supply chain management ensure that your products are delivered on time, every time, no matter where you are located.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- End who we are section -->
 
-					
-
-					
-					
-
-					
-
-				</div>
-			</div>
-		</div>
-	</div>
-		
-		
-
-		 <!-- End who we are section -->
 
 		 <!-- start our vision and mission -->
 		<!-- Start Testimonial Slider -->
@@ -178,7 +185,7 @@
 											<div class="testimonial-block text-center">
 												<h2 class="section-title">Our Vision</h2>
 												<blockquote class="mb-2">
-													<p>&ldquo;Our vision is to be the preferred global sourcing partner for businesses around the world. We aim to build long-term relationships with our clients by consistently delivering quality products, competitive prices, and unmatched service. We see ourselves not just as a supplier, but as a strategic partner that helps our clients succeed and grow in an increasingly interconnected world.&rdquo;</p>
+													<p>Our vision is to be the preferred global sourcing partner for businesses around the world. We aim to build long-term relationships with our clients by consistently delivering quality products, competitive prices, and unmatched service. We see ourselves not just as a supplier, but as a strategic partner that helps our clients succeed and grow in an increasingly interconnected world.</p>
 												</blockquote>
 
 												
@@ -196,7 +203,7 @@
 											<div class="testimonial-block text-center">
 												<h2 class="section-title">Our Mission</h2>
 												<blockquote class="mb-2">
-													<p>&ldquo;Our mission is to facilitate international trade by providing a seamless, hassle-free sourcing and delivery process. We are dedicated to bridging the gap between manufacturers and markets, ensuring that our clients have access to the best products and services available.&rdquo;</p>
+													<p>Our mission is to facilitate international trade by providing a seamless, hassle-free sourcing and delivery process. We are dedicated to bridging the gap between manufacturers and markets, ensuring that our clients have access to the best products and services available.</p>
 												</blockquote>
 
 												
@@ -216,57 +223,55 @@
 		<!-- End Testimonial Slider -->
 		<!-- end our vision and mission -->
 
-		<!-- Start Why Choose Us Section -->
-<div class="why-choose-section">
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-lg-6">
-                <h2 class="section-title">Why Choose Us</h2>
-
-                <div class="row my-5">
-                    <div class="col-12">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="images/truck.svg" alt="Global Expertise" class="img-fluid">
-                            </div>
-                            <h3>Global Expertise</h3>
-                            <p>We have a deep understanding of the complexities of international trade, and we use this knowledge to help our clients navigate the global market.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="images/bag.svg" alt="Personalized Service" class="img-fluid">
-                            </div>
-                            <h3>Personalized Service</h3>
-                            <p>We take the time to understand our clients' needs and tailor our services to meet their specific requirements.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="images/support.svg" alt="Reliability" class="img-fluid">
-                            </div>
-                            <h3>Reliability</h3>
-                            <p>We are a partner you can count on. From sourcing to delivery, we ensure that every step of the process is handled with care and professionalism.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="img-wrap">
-                    <img src="images/why-choose-us-img.jpg" alt="Why Choose Us Image" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- End Why Choose Us Section -->
-
+			<!-- Start Why Choose Us Section -->
+			<div class="why-choose-section">
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-lg-6">
+							<h2 class="section-title">Why Choose Us</h2>
+			
+							<div class="row my-5">
+								<div class="col-12">
+									<div class="feature">
+										<div class="icon">
+											<img src="images/global.png" alt="Global Expertise" class="img-fluid" style="width: 50px;height: 50px;">
+										</div>
+										<h5 style="color: black;"><b>Global Expertise</b></h5>
+										<p style="text-align: justify;font-size: 17px;">We have a deep understanding of the complexities of international trade, and we use this knowledge to help our clients navigate the global market.</p>
+									</div>
+								</div>
+			
+								<div class="col-12">
+									<div class="feature">
+										<div class="icon">
+											<img src="images/personalize.svg" alt="Personalized Service" class="img-fluid" style="width: 50px;height: 50px;">
+										</div>
+										<h5 style="color: black;"><b>Personalized Service</b></h5>
+										<p style="text-align: justify;font-size: 17px;">We take the time to understand our clients' needs and tailor our services to meet their specific requirements.</p>
+									</div>
+								</div>
+			
+								<div class="col-12">
+									<div class="feature">
+										<div class="icon">
+											<img src="images/reliability.png" alt="Reliability" class="img-fluid" style="width: 50px;height: 50px;">
+										</div>
+										<h5 style="color: black;"><b>Reliability</b></h5>
+										<p style="text-align: justify;font-size: 17px;">We are a partner you can count on. From sourcing to delivery, we ensure that every step of the process is handled with care and professionalism.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+			
+						<div class="col-lg-5">
+							<div class="img-wrap">
+								<img src="images/whychooseus.jpg" alt="Why Choose Us Image" class="img-fluid">
+							</div>
+						</div>
+			
+					</div>
+				</div>
+			</div>	<!-- End Why Choose Us Section -->
 		<!-- Start Team Section -->
 		<div class="untree_co-section">
 			<div class="container">
@@ -292,87 +297,90 @@
 			</div>
 		</div>
 		<!-- End Team Section -->
+<!-- Start Footer Section -->
+<footer class="footer-section">
+	<div class="container relative">
 
-		<!-- Start Footer Section -->
-		<footer class="footer-section">
-			<div class="container relative">
+		<!-- <div class="sofa-img">
+			<img src="images/sofa.png" alt="Image" class="img-fluid">
+		</div> -->
 
-				<!-- <div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
-				</div> -->
+		
+		<div class="row mb-5">
+			<div class="col-lg-4">
+				<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">GSP<span></span></a></div>
+				<p class="mb-4">Dedicated to excellence, honesty, and trustworthiness, our goal is to link businesses worldwide with premium goods for seamless transactions.</p>
 
-				
-				<div class="row g-5 mb-5">
-					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">GSP<span></span></a></div>
-						<p class="mb-4">Dedicated to excellence, honesty, and trustworthiness, our goal is to link businesses worldwide with premium goods for seamless transactions.</p>
+				<ul class="list-unstyled custom-social">
+					<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+					<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+					<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+					<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+				</ul>
+			</div>
 
-						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+			<div class="col-lg-8">
+				<div class="row links-wrap">
+					<div class="col-6 col-sm-6 col-md-4">
+						<ul class="list-unstyled">
+							<h5>Pages</h5>
+							<ul class="list-unstyled">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
 						</ul>
 					</div>
 
-					<div class="col-lg-8">
-						<div class="row links-wrap">
-							<div class="col-6 col-sm-6 col-md-4">
-								<ul class="list-unstyled">
-									<h5>About Us</h5>
-									<p>
-										GSP Infinity Ventur is a forward-thinking Global Sourcing Partner specializing in diverse import and export products.
-									</p>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-4">
-								<ul class="list-unstyled">
-									<h5>Our Products</h5>
-									<li><a href="services.html">Wooden Cutlery</a></li>
-									<li><a href="services.html">Plywood</a></li>
-									<li><a href="services.html">Teak and Merbau Wood</a></li>
-									<li><a href="services.html">LED Lights</a></li>
-									<li><a href="services.html">POP Boards & Wallpapers</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-4">
-								<ul class="list-unstyled">
-									<h5>Contact Us</h5>
-									<li><a href="#">+91 1234567890</a></li>
-									<li><a href="#">john@gmail.com</a></li>
-									<li><a href="#">Chennai</a></li>
-									
-								</ul>
-							</div>
-
-						
-						</div>
+					<div class="col-6 col-sm-6 col-md-4">
+						<ul class="list-unstyled">
+							<h5>Our Products</h5>
+							<li><a href="services.html">Wooden Cutlery</a></li>
+							<li><a href="services.html">Plywood</a></li>
+							<li><a href="services.html">Teak and Merbau Wood</a></li>
+							<li><a href="services.html">LED Lights</a></li>
+							<li><a href="services.html">POP Boards & Wallpapers</a></li>
+						</ul>
 					</div>
+
+					<div class="col-6 col-sm-6 col-md-4">
+						<ul class="list-unstyled">
+							<h5>Contact Us</h5>
+							<li><a href="#">+91 1234567890</a></li>
+							<li><a href="#">john@gmail.com</a></li>
+							<li><a href="#">Chennai</a></li>
+							
+						</ul>
+					</div>
+
+				
+				</div>
+			</div>
+
+		</div>
+
+		<div class="border-top copyright">
+			<div class="row pt-4">
+				<div class="col-lg-6">
+					<p class="mb-2 text-center text-lg-start">Copyright &copy; All Rights Reserved.</a>
 
 				</div>
 
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy; All Rights Reserved.</a>
-
-						</div>
-
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
-
-					</div>
+				<div class="col-lg-6 text-center text-lg-end">
+					<ul class="list-unstyled d-inline-flex ms-auto">
+						<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
 				</div>
 
 			</div>
-		</footer>
-		<!-- End Footer Section -->	
+		</div>
+
+	</div>
+</footer>
+<!-- End Footer Section -->	
+
 
 
 
