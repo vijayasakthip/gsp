@@ -31,7 +31,7 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #3b5d50 !important;
+  background: white !important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
@@ -51,7 +51,7 @@ a {
       margin-right: 15px; } }
   .custom-navbar .custom-navbar-nav li a {
     font-weight: 500;
-    color: #ffffff !important;
+    color: black !important;
     opacity: .5;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -481,8 +481,8 @@ a {
     .testimonial-slider-wrap #testimonial-nav > span {
       cursor: pointer;
       position: absolute;
-      width: 58px;
-      height: 58px;
+      width: 80px;
+      height: 80px;
       line-height: 58px;
       border-radius: 50%;
       background: rgba(59, 93, 80, 0.1);
@@ -560,8 +560,8 @@ a {
       font-size: 14px; }
       .blog-section .post-entry .post-content-entry .meta a {
         font-weight: 600; }
-  .blog-section .post-entry:hover .post-thumbnail img, .blog-section .post-entry:focus .post-thumbnail img {
-    opacity: .7; }
+  /* .blog-section .post-entry:hover .post-thumbnail img, .blog-section .post-entry:focus .post-thumbnail img {
+    opacity: .7; } */
 
 .footer-section {
   padding: 80px 0;
@@ -650,7 +650,7 @@ a {
       font-size: 14px !important; }
 
 .untree_co-section {
-  padding: 7rem 0; }
+  padding: 2rem 0; }
 
 .form-control {
   height: 50px;
@@ -753,7 +753,7 @@ textarea {
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 #testimonial-nav .prev:hover, #testimonial-nav .next:hover {
