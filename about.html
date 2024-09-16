@@ -36,6 +36,28 @@
    				border-color: black; /* Border color change black*/
 				transition: all ease 1.0s;
 			}
+			#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
 		</style>
 	</head>
 
@@ -45,7 +67,7 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar" style="font-size: 17px;">
 
 			<div class="container">
-<a class="navbar-brand" href="index.html"><img src="images/gsplogoo.png" alt="" style="width: 150px;height: 150px;"><span></span></a>
+				<a class="navbar-brand" href="index.html"><img src="images/gsplogoo.png" alt="" style="width: 80px;height: 80px;"><span></span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -58,7 +80,7 @@
 						</li>
 					
 						<li class="active"><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="services.html">Services</a></li>
+						<li><a class="nav-link" href="services.html">Products</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
 			
 					</ul>
@@ -81,7 +103,7 @@
 				</div>
 			</div>
 			<div class="col-lg-5">
-			
+				<img  class="img-fluid"  src="images/a1.jpg" alt="aboutus" style="border-radius: 10px;">
 			</div>
 		</div>
 	</div>
@@ -380,6 +402,7 @@
 	</div>
 </footer>
 <!-- End Footer Section -->	
+<button id="scrollToTopBtn" title="Go to top">↑</button>
 
 
 
@@ -387,6 +410,24 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script>
+			// Get the button element
+			const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+			
+			// Show the button when the user scrolls down 20px from the top
+			window.onscroll = function() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					scrollToTopBtn.style.display = 'block';
+				} else {
+					scrollToTopBtn.style.display = 'none';
+				}
+			};
+			
+			// Scroll to top function
+			scrollToTopBtn.onclick = function() {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			};
+			</script>
 	</body>
 
 </html>
