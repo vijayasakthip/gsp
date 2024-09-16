@@ -67,16 +67,61 @@
 	
 }
 }
+/* styles.css */
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+.navbar-collapse{
+	text-align: center;
+}
+/* Navbar-dark specific icon styling */
+.navbar-dark .navbar-toggler-icon {
+  width: 40px; /* Increase size as needed */
+  height: 40px; /* Increase size as needed */
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="black" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Ensure no background image for other themes */
+.navbar-light .navbar-toggler-icon {
+  background-image: none; /* Remove any background image */
+}
+
+
+
+
 		</style>
 	</head>
 
 	<body>
 
 		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar bg-white navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar" style="font-size: 17px;">
+		<nav class="custom-navbar navbar  navbar navbar-expand-md navbar-dark" arial-label="Furni navigation bar" style="font-size: 17px;">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html"><img src="images/gsplogoo.png" alt="" style="width: 150px;height: 150px;"><span></span></a>
+				<a class="navbar-brand" href="index.html"><img src="images/gsplogoo.png" alt="" style="width: 80px;height: 80px;"><span></span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -89,7 +134,7 @@
 						</li>
 						
 						<li><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="services.html">Services</a></li>
+						<li><a class="nav-link" href="services.html">Products</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
 					</ul>
 
@@ -112,7 +157,8 @@
 						</div>
 					</div>
 					<div class="col-lg-5">
-					
+						<img class="img-fluid" src="images/welcome1.png" alt="" style="border-radius: 10px;">
+						
 					</div>
 				</div>
 			</div>
@@ -252,7 +298,7 @@
 						<div class="product-item-sm d-flex">
 						  <!-- Thumbnail Section -->
 						  <div class="thumbnail">
-							<img src="images/teakmerbauwood.webp" alt="Teak and Merbau Wood Image" class="img-fluid" style="border-radius: 10px; height: 120px; width: auto;">
+							<img src="images/teakandmerbauwood.png" alt="Teak and Merbau Wood Image" class="img-fluid" style="border-radius: 10px; height: 120px; width: auto;">
 						  </div>
 					  
 						  <!-- Product Information Section -->
@@ -272,7 +318,7 @@
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
 							<div class="thumbnail">
-								<img src="images/led-lights.png" alt="Image" class="img-fluid" style="border-radius: 10px;height: 120px;width: auto;">
+								<img src="images/led.jpg" alt="Image" class="img-fluid" style="border-radius: 10px;height: 120px;width: auto;">
 							</div>
 							<div class="pt-3">
 								<h3 style="font-size: 17px;">LED Lights</h3>
@@ -287,7 +333,7 @@
 						<div class="product-item-sm d-flex">
 						  <!-- Thumbnail Section -->
 						  <div class="thumbnail">
-							<img src="images/pop.jpg" alt="POP Boards & Wallpapers Image" class="img-fluid" style="border-radius: 10px; height: 120px; width: auto;">
+							<img src="images/popboard.png" alt="POP Boards & Wallpapers Image" class="img-fluid" style="border-radius: 10px; height: 120px; width: auto;">
 						  </div>
 					  
 						  <!-- Product Information Section -->
@@ -479,11 +525,30 @@
 			</div>
 		</footer>
 		<!-- End Footer Section -->	
-
+		<button id="scrollToTopBtn" title="Go to top">↑</button>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		
+<script>
+// Get the button element
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Show the button when the user scrolls down 20px from the top
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+};
+
+// Scroll to top function
+scrollToTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
 	</body>
 
 </html>
