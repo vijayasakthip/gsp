@@ -29,6 +29,31 @@
     			border-color: black; /* Border color change black*/
 				transition: all ease 1.0s;
 			}
+			#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+.color{
+	color: black;
+}
+
 		</style>
 	</head>
 
@@ -38,7 +63,7 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar" style="font-size: 17px;">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html"><img src="images/gsplogoo.png" alt="" style="width: 150px;height: 150px;"><span></span></a>
+				<a class="navbar-brand" href="index.html"><img src="images/gsplogoo.png" alt="" style="width: 80px;height: 80px;"><span></span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -51,7 +76,7 @@
 						</li>
 					
 						<li ><a class="nav-link" href="about.html">About us</a></li>
-						<li class="active" ><a class="nav-link" href="services.html">Services</a></li>
+						<li class="active" ><a class="nav-link" href="services.html">Products</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>
 			
 					</ul>
@@ -75,7 +100,7 @@
 							</div>
 						</div>
 						<div class="col-lg-5">
-						
+							<img  class="img-fluid"  src="images/ourproduct2.jpg" alt="" style="border-radius: 10px;">
 						</div>
 					</div>
 				</div>
@@ -96,10 +121,10 @@
 
 					<!-- Start Column 2 -->
 					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
-						<a class="product-item" href="#">
+						<a class="product-item" href="#wooden-cutlery">
 							<img src="images/woodencutlery.png" class="img-fluid product-thumbnail" style="border-radius: 10px;">
 							<h3 class="product-title">Wooden Cutlery</h3>
-							<strong class="product-price">$50.00</strong>
+							
 
 							
 						</a>
@@ -108,10 +133,10 @@
 
 					<!-- Start Column 3 -->
 					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
-						<a class="product-item" href="#">
+						<a class="product-item" href="#plywood">
 							<img src="images/plywood.png" class="img-fluid product-thumbnail" style="border-radius: 10px;">
 							<h3 class="product-title">Plywood</h3>
-							<strong class="product-price">$78.00</strong>
+						
 
 							
 						</a>
@@ -120,10 +145,10 @@
 
 					<!-- Start Column 4 -->
 					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
-						<a class="product-item" href="#">
-							<img src="images/teakmerbauwood.webp" class="img-fluid product-thumbnail" style="border-radius: 10px;">
+						<a class="product-item" href="#teak">
+							<img src="images/merbau.png" class="img-fluid product-thumbnail" style="border-radius: 10px;">
 							<h3 class="product-title">Teak and Merbau Wood</h3>
-							<strong class="product-price">$43.00</strong>
+							
 
 							
 						</a>
@@ -132,10 +157,10 @@
 
 					<!-- Start Column 5 -->
 					<div class="col-12 col-md-4 col-lg-6 mb-5 mb-md-0">
-						<a class="product-item" href="#">
-							<img src="images/led-lights.png" class="img-fluid product-thumbnail" style="border-radius: 10px;">
+						<a class="product-item" href="#led">
+							<img src="images/led.jpg" class="img-fluid product-thumbnail" style="border-radius: 10px;">
 							<h3 class="product-title">LED Lights</h3>
-							<strong class="product-price">$43.00</strong>
+						
 
 							
 						</a>
@@ -144,17 +169,101 @@
 
 					<!-- Start Column 6 -->
 					<div class="col-12 col-md-4 col-lg-6 mb-5 mb-md-0">
-						<a class="product-item" href="#">
-							<img src="images/pop.jpg" class="img-fluid product-thumbnail" style="border-radius: 10px;height:362px ;width:100%;">
+						<a class="product-item" href="#pop">
+							<img src="images/popboard.png" class="img-fluid product-thumbnail" style="border-radius: 10px;height:420px;width: 500px;">
 							<h3 class="product-title">POP Boards & Wallpapers</h3>
-							<strong class="product-price">$43.00</strong>
+							
 
 							
 						</a>
 					</div>
 					<!-- End Column 6 -->
 
+
 				</div>
+
+				<div id="wooden-cutlery">
+					<br>
+				<div class="row mt-4 mb-4 color">
+					<div class="col-lg-6" >
+						<h1>Wooden Cutlery</h1>
+						<p style="text-align: justify">
+							Wooden cutlery is an eco-friendly alternative to plastic, crafted from sustainably sourced materials that help reduce environmental impact. Unlike disposable plastic utensils, wooden cutlery is biodegradable and compostable, making it an excellent choice for those looking to minimize their carbon footprint. The natural wood finish provides a unique aesthetic, combining rustic charm with modern elegance to enhance any dining experience. Our wooden cutlery is designed with comfort and functionality in mind, featuring smooth edges and a sturdy build that ensures a pleasant eating experience. Ideal for both casual meals and formal events, this cutlery set adds a touch of sophistication while being practical and easy to maintain. By choosing wooden cutlery, you’re not only investing in quality and style but also supporting sustainable practices that contribute to a healthier planet. Elevate your dining with this beautiful, environmentally responsible alternative that reflects a commitment to both style and sustainability.
+						</p>
+						
+					</div>
+					<div class="col-lg-6">
+						<img src="images/woodencutlery.png" class="img-fluid" alt="" style="height:400px;width: 514px;border-radius: 10px;">
+					</div>
+				</div>
+			</div>
+
+				<div id="plywood">
+					<br>
+				<div class="row mt-4 mb-4 color" >
+					<div class="col-lg-6">
+						<img src="images/plywood.png" class="img-fluid" alt="" style="height:400px;width: 514px;border-radius: 10px;">
+					</div>
+					<div class="col-lg-6">
+						<h1>Plywood</h1>
+						<p style="text-align: justify">
+							Plywood is a strong, versatile wood product made from layers of veneer that are glued together under high pressure. Each layer, or ply, is oriented with its grain perpendicular to the adjacent layers, which enhances the material’s strength and durability. This unique construction method makes plywood resistant to warping, shrinking, and cracking, making it an ideal choice for a variety of applications. From construction and furniture making to cabinetry and interior design, plywood offers a reliable and cost-effective solution. Its smooth surface is easily finished, painted, or stained, allowing for a high-quality appearance that meets both aesthetic and functional needs. Additionally, plywood is available in various grades and thicknesses, ensuring that it can be tailored to meet specific project requirements. By choosing plywood, you benefit from a material that combines practical strength with aesthetic versatility, making it a staple in both professional and DIY projects.
+						</p>			
+					</div>
+				</div>
+			</div>
+
+				<div id="teak">
+					<br>
+				<div class="row mt-4 mb-4 color" >
+					<div class="col-lg-6">
+						<h1>Teak and Merbau Wood</h1>
+						<p style="text-align: justify;">
+							Teak and Merbau wood are highly esteemed for their durability and resistance to weather conditions, making them excellent choices for outdoor and high-traffic applications. Teak, with its natural oils and dense grain, is renowned for its exceptional resistance to moisture, insects, and decay. This makes it ideal for outdoor furniture, decking, and boat building. Merbau, similarly, is valued for its robustness and resilience, featuring a deep, rich color that darkens beautifully over time. Its natural hardness and resistance to termites and fungal decay make it suitable for heavy-duty applications such as flooring and structural components. Both woods are not only practical but also aesthetically pleasing, offering a luxurious appearance and a long lifespan. Choosing Teak or Merbau ensures that your project benefits from materials that combine strength, beauty, and lasting performance, whether for interior or exterior use.
+						</p>
+									
+					</div>
+					<div class="col-lg-6">
+						<img src="images/merbau.png" class="img-fluid" alt="" style="height:400px;width: 514px;border-radius: 10px;">
+					</div>
+				</div>
+			</div>
+
+			<div id="led">
+				<br>
+				<div class="row mt-4 mb-4 color" >
+					
+					<div class="col-lg-6">
+						<img src="images/led.jpg" class="img-fluid" alt="" style="height:400px;width: 514px;border-radius: 10px;">
+					</div>
+					<div class="col-lg-6">
+						<h1>LED Lights</h1>
+						<p style="text-align: justify">
+							LED lights are renowned for their energy efficiency, longevity, and eco-friendliness, making them a superior choice for modern lighting solutions. Unlike traditional incandescent bulbs, LEDs use a fraction of the energy to produce the same amount of light, which translates into significant cost savings on electricity bills. Their impressive lifespan means they need to be replaced far less frequently, reducing both maintenance efforts and waste. Additionally, LEDs generate minimal heat compared to other lighting options, which helps to lower cooling costs and enhances safety. They are also free from hazardous materials such as mercury, making them a safer and more sustainable choice for the environment. With a wide range of color temperatures and brightness levels available, LED lights offer versatility for various applications, from residential to commercial settings. By opting for LED technology, you not only enjoy high-quality illumination but also contribute to a greener, more energy-efficient future.
+						</p>
+						
+									
+					</div>
+				</div>
+			</div>
+
+			<div id="pop">
+				<br>
+				<div class="row mt-4 mb-4 color" >
+					<div class="col-lg-6">
+						<h1>POP Boards & Wallpapers</h1>
+						<p style="text-align: justify;">
+							POP (Plaster of Paris) boards and wallpapers are popular choices for enhancing interior decor due to their versatility and stylish appearance. POP boards are known for their ability to create smooth, seamless finishes on walls and ceilings, which can be easily molded into various shapes and designs. This makes them ideal for creating decorative elements such as intricate ceiling patterns or elegant wall panels. Wallpapers, on the other hand, offer an extensive range of patterns, textures, and colors, allowing homeowners to personalize their spaces with ease. They can mimic the look of luxurious materials like wood or stone or introduce vibrant patterns and textures that transform the ambiance of any room. Both POP boards and wallpapers provide practical solutions for covering imperfections and adding character to walls, making them essential tools in interior design. By combining functionality with aesthetic appeal, these materials offer a stylish way to enhance the beauty and individuality of your living spaces.
+						</p>
+						
+									
+					</div>
+					<div class="col-lg-6">
+						<img src="images/popboard.png" class="img-fluid" alt="" style="height:400px;width: 514px;border-radius: 10px;">
+					</div>
+				</div>
+			</div>
+
 			</div>
 		</div>
 	</div>
@@ -332,12 +441,31 @@
 			</div>
 		</footer>
 		<!-- End Footer Section -->	
+		<button id="scrollToTopBtn" title="Go to top">↑</button>
 
 
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script>
+			// Get the button element
+			const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+			
+			// Show the button when the user scrolls down 20px from the top
+			window.onscroll = function() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					scrollToTopBtn.style.display = 'block';
+				} else {
+					scrollToTopBtn.style.display = 'none';
+				}
+			};
+			
+			// Scroll to top function
+			scrollToTopBtn.onclick = function() {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			};
+			</script>
 	</body>
 
 </html>
